@@ -20,10 +20,11 @@ replace **yourapp** with the name of your Django application. It is needed to us
 
 3. Add following lines into your Django project settings.py 
 ```python
-# ------------------------------------------------------------------------------
 # Setup the AUTHENTICATION BACKEND
 AUTHENTICATION_BACKENDS = ['ldap.auth.LDAPBackend']
-
+```
+4. You can set LDAPBackend configuration parameters by puting them directly into settings.py file 
+```python
 # LDAPBackend configuration parameters
 # Name or IP or the complete url in the scheme://hostname:hostport format of the server
 # Port and scheme (ldap or ldaps) defined here have precedence over the parameters
@@ -55,5 +56,5 @@ LDAP_AUTH_SEARCH_FILTER = 'sAMAccountName'
 
 # A single attribute or a list of attributes to be returned by the search.
 LDAP_AUTH_SEARCH_ATRIBUTES = ['cn', 'mail']
-# ------------------------------------------------------------------------------
 ```
+or by editing them in ldap\conf.py file

@@ -1,0 +1,2 @@
+Django
+ldap3

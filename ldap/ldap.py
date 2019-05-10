@@ -3,7 +3,7 @@ Low-level LDAP hooks.
 
 
 import os
-os.environ.setdefault("DJANGO_SETTINGS_MODULE", "sqm.settings")
+os.environ.setdefault("DJANGO_SETTINGS_MODULE", "yourapp.settings")
 from django.conf import settings
 # print(settings.LDAP_AUTH_ACTIVE_DIRECTORY_DOMAIN)
 from polls.ldap.ldap import LDAPConnection

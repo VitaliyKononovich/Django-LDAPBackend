@@ -1,7 +1,17 @@
 # Django-LDAPBackend
 My customized Django-LDAPBackend for users authentication in Active Directory
 
+---
 
+## How to use it
+1. Copy ldap folder into your Django project directory
+2. Change line 6 in ldap\ldap.py file 
+```python
+os.environ.setdefault("DJANGO_SETTINGS_MODULE", "yourapp.settings")
+```
+replace **yourapp** with the name of your Django application. It is needed to use setting file from your application
+
+3. Add following lines into your Django project settings.py 
 ```python
 # ------------------------------------------------------------------------------
 # Setup the AUTHENTICATION BACKEND

@@ -1,2 +1,2 @@
 # Django-LDAPBackend
-My customized Django-LDAPBackend for authenticate users by Active Directory
+My customized Django-LDAPBackend for users authentication in Active Directory

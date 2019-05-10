@@ -6,7 +6,7 @@ First of all it use django.contrib.admin and django.contrib.auth. You have to ad
 Firstly it is checked if the user exist in local DB. If user doesn't exixt in local DB the access will be denied. 
 
 If user exists it checks if user is superuser. If user is superuser it is authenticated by local password. 
-If user is not superuser LDAP query is performed to Active Directory (AD) and if authentication passes successfully acces is cratnted and first name, last name and email address copied from the user account in AD and stored in local DB as an additional information about the user.   
+If user is not superuser LDAP query is performed to Active Directory (AD) and if authentication passes successfully access is granted and first name, last name and email address copied from the user account in AD to local DB as an additional information about the user.   
 
 ---
 

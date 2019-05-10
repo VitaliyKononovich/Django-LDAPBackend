@@ -12,7 +12,7 @@ class LDAPSettings:
         # Port and scheme (ldap or ldaps) defined here have precedence over the parameters
         # LDAP_AUTH_PORT and LDAP_AUTH_USE_SSL
         #LDAP_AUTH_URL = 'ldap://localhost:389'
-        self.LDAP_AUTH_URL = '10.254.5.59'
+        self.LDAP_AUTH_URL = '10.254.10.10'
 
         # Specifies if the connection is on a secure port (defaults to False).
         # When True the secure port is usually set to 636.
@@ -23,11 +23,11 @@ class LDAPSettings:
 
         # The domain string which is used for Kerberos: <user>@domain.com
         # or NTLM: domain\<user>
-        #LDAP_AUTH_ACTIVE_DIRECTORY_DOMAIN = 'velcom\\'
-        self.LDAP_AUTH_ACTIVE_DIRECTORY_DOMAIN = '@main.velcom.by'
+        #LDAP_AUTH_ACTIVE_DIRECTORY_DOMAIN = 'wellcome\\'
+        self.LDAP_AUTH_ACTIVE_DIRECTORY_DOMAIN = '@my.wellcome.com'
 
         #The base of the search request
-        self.LDAP_AUTH_SEARCH_BASE = 'OU=Users new,DC=MAIN,DC=VELCOM,DC=BY'
+        self.LDAP_AUTH_SEARCH_BASE = 'OU=Users new,DC=MY,DC=WELLCOME,DC=COM'
 
         # The filter of the search request. It must conform to the LDAP filter
         # syntax specified in RFC4515.

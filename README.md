@@ -1,5 +1,5 @@
 # Django-LDAPBackend
-My customized Django-LDAPBackend for users authentication in Active Directory
+My simple customized Django-LDAPBackend for users authentication in Active Directory
 
 First of all it use django.contrib.admin and django.contrib.auth. You have to add this applications to your Django project and create users in admin page (your local DB). 
 
@@ -23,7 +23,7 @@ replace **yourapp** with the name of your Django application. It is needed to us
 # Setup the AUTHENTICATION BACKEND
 AUTHENTICATION_BACKENDS = ['ldap.auth.LDAPBackend']
 ```
-4. You can set LDAPBackend configuration parameters by puting them directly into settings.py file 
+4. You can set LDAPBackend configuration parameters by putting them directly into settings.py file 
 ```python
 # LDAPBackend configuration parameters
 # Name or IP or the complete url in the scheme://hostname:hostport format of the server
